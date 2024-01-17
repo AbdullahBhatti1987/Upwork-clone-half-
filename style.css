@@ -1,0 +1,499 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+}
+header img{
+    width: 80px;
+    margin-right: 20px ;
+}
+
+header{
+    display: flex;
+    height: 65px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding: 0px 25px;
+}
+header div.navbar{  
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+header div.navbar .list{  
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+}
+header .list li{
+    padding: 0px 8px;
+}
+header .list li span{
+    padding: 5px;
+    font-size: xx-small;    
+}
+header .list li a{
+    color: darkslategray;
+    font-weight: 600;
+}
+
+header div.search{
+    display: flex;
+    flex-direction: row;    
+}
+header div.search form:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+header div.search form input:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+header div.search form button:hover{
+    background-color: white;
+}
+header div.search button{
+    border-radius: 25px;    
+    margin: 0px 5px;
+    border: none;
+    padding: 10px 20px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+div.search button span{
+
+    margin-left: 5px;
+}
+div.search form{
+    border: 2px solid lightgray;
+    border-radius: 25px;
+}
+div.search input, #getstart{
+    border-radius: 25px;    
+    margin: 0px 5px;
+    border: none;
+    padding: 10px 20px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#signup, #getstart{
+    background-color: green;
+    color: white;
+}
+div.services{
+    width: 100%;
+}
+#signup:hover, #getstart:hover{
+    background-color: #14A800;
+}
+
+div.services ul{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+div.services ul li{
+    margin: 10px;
+    font-weight: 600;    
+}
+div.services ul li a span{
+    margin-left: 8px;
+}
+div.main{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+div.main div.heading{
+    width: 50%;
+    padding-top: 20px;
+}
+div.main div.heading h1{
+    font-size: 80px;
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px;
+    margin: 0px;
+}
+div.main div.heading h3{
+    font-size: 20px;
+}
+div.main div.img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.main div.img img{
+    width: 75%;
+}
+
+div.trustee{
+    width: 85%;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+div.trustee div.trusteeimg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+div.trustee div.trusteeimg img{
+    height: 25px;
+}
+
+div#animation{
+    width: 85%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0px auto;
+    border-radius: 25px;
+    border-bottom-left-radius: 120px;
+
+    background-color: #71E4CD;
+    position: relative;
+    overflow: hidden;
+}
+
+div#animation::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #71E4CD, #C8A0BC ,#71E4CD,#71E4CD);
+    animation: moveBackground 8s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        left: -30%;
+    }
+    50% {
+        left: 70%;
+    }
+    100% {
+        left: -30%;
+    }
+    
+} */
+
+
+div#animation p{
+    text-align: right;
+}
+#beta{
+    background-color: darkgreen;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+div#animation h1{
+    position: absolute;
+    font-size: 50px;
+    left: 15px;
+    padding: 10px 20px;
+}
+div#animation h3{
+    position: absolute;
+    font-size: 20px;
+    top: 100px;
+    left: 40px;
+}
+div#animation img{
+    width: 120px;
+    position: absolute;
+    top: 180px;
+    left: 50px;
+
+}
+
+div.message{
+    position: relative;
+    background-color:white;
+    width: 63%;
+    top: -150px;
+    margin-left: 22%;
+    padding: 40px;
+    box-shadow: 1px 1px 10px lightgray;
+}
+div.message button{
+    padding: 10px;
+    color: green;
+    border: 2px solid lightgray;
+    border-radius: 7px;
+    margin: 5px 0px;
+    background-color: white;
+    font-size: 18px;
+}
+
+div.message p.last{
+    text-align: right;
+    color: gray;
+}
+div.message p.last a{
+    text-decoration: underline;
+    color: green;
+}
+
+
+div.talent_category{
+    position: relative;
+    top: -100px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+div.talent_category div.boxes{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    ;
+}
+div.talent_category div.category{
+    width: 20%;
+    background-color: #F7FAF7;
+    margin: 10px;
+    padding: 20px;
+}
+div.talent_category div.category:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+div.talent_category div.category p span:last-child{
+    margin-left: 50px;
+}
+div.talent_category div.category p span i{
+    color: #14A800;
+}
+
+
+div.game{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+}
+div.game div.first{
+    width: 40%;
+    background-color: #F7FAF7;
+
+}
+div.game div.first img{
+    width: 40%;
+
+}
+div.game div.second{
+    width: 60%;
+    padding: 40px;
+}
+div.game div.second h1, h2, p{
+    margin: 10px 0px; 
+    padding: 0px;
+}
+div.game div.second h1{
+    font-size: 30px;
+}
+div.game div.second h2{
+    font-size: 20px;
+    margin-top: 20px;
+}
+div.game div.second p{
+    font-size: 15px;
+    margin-left: 40px;
+}
+div.game div.second h2 i{
+    margin-right: 20px;
+}
+
+div.button button{
+    padding: 10px 20px;
+    font-size: 17px;
+    border-radius: 25px;
+    border: 2px solid #14A800;
+}
+div.button button:first-child{
+    background-color: green;
+    color: white; 
+}
+div.button button:last-child{
+    color: green;
+}
+
+
+div.wheelchair{
+    width: 85%;
+    background-color: #13544E;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+}
+div.wheelchair div.third{
+    width: 60%;
+    padding: 40px;
+}
+div.wheelchair div.third h1{
+    color: #91E6B3;
+    font-size: 40px;
+    margin: 0px;
+    padding: 0px;
+}
+div.wheelchair div.third p i{
+    margin-right: 20px;
+}
+div.wheelchair div.third button{
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+}
+div.wheelchair div.fourth{
+    width: 40%;
+    background-image: url(./images/wheelchair.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+div.client{
+    width: 79.8%;
+    height: 400px;
+    margin: 40px auto;
+    background-image: url(./images/blackman.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    border-radius: 15px;
+}
+div.client div.top{
+    width: 35%;
+
+}
+
+div.client div.greenbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+div.client div.greenbox div.box{
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+}
+div.client div.greenbox div.box h1{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fgreen{
+    color: green;
+}
+
+div.screen {
+    position: fixed;
+    /* width: 15%; */
+    bottom: 20px;
+    right: 20px;
+}
+div.screen img {
+    width: 90px;
+}
+
+
+.cgray{
+    color: gray;
+}
+
+.fwhite{
+    color: white!important;
+}
+.bgreen{
+    background-color: green;
+}
+
+/* .animated-box {
+    width: 900px;
+    height: 500px;
+    background-color: pink;
+    position: relative;
+    overflow: hidden;
+}
+
+.animated-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, pink, skyblue ,pink,pink);
+    animation: moveBackground 8s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        left: -30%;
+    }
+    50% {
+        left: 70%;
+    }
+    100% {
+        left: -30%;
+    }
+    
+} */
